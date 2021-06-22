@@ -51,7 +51,7 @@ from setuptools import find_packages, setup
 
 
 # Remove stale transformers.egg-info directory to avoid https://github.com/pypa/pip/issues/5466
-stale_egg_info = Path(__file__).parent / "transformers.egg-info"
+stale_egg_info = Path(__file__).parent / "character_bert.egg-info"
 if stale_egg_info.exists():
     print(
         (
@@ -177,7 +177,7 @@ class DepsTableUpdateCommand(Command):
     description = "build runtime dependency table"
     user_options = [
         # format: (long option, short option, description).
-        ("dep-table-update", None, "updates src/transformers/dependency_versions_table.py"),
+        #("dep-table-update", None, "updates src/transformers/dependency_versions_table.py"),
     ]
 
     def initialize_options(self):
